@@ -1,0 +1,487 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://6.869.csail.mit.edu/fa19/schedule.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+<script src="./sm/assets/teaser-data.js"></script>
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Flowing from Words to Pixels: A Framework for Cross-Modality Evolution</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Flowing from Words to Pixels: A Framework for Cross-Modality Evolution.&#39;">
+    <!-- <link rel="icon" href="./path.jpg"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Flowing from Words to Pixels: A Framework for Cross-Modality Evolution</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Flowing from Words to Pixels: A Framework for Cross-Modality Evolution.&#39;">
+    <!-- <link rel="icon" href="./path.jpeg"> -->
+</head>
+
+<body>
+    <p class="title">Flowing from Words to Pixels: A Framework for Cross-Modality Evolution</p>
+    <!-- <div style="text-align: center; font-size: 40pt; margin-bottom: 30px"> -->
+            <!-- <span>CVPR 2023</span> -->
+    <!-- </div> -->
+    <!-- &nbsp;<br>
+    <table width="80%" border="0" align="center" class="menu" style="margin-bottom: 8px; font-size: 26px;">
+        <tbody>
+            <tr>
+                <td style="text-align: center; width:0%; ">CVPR 2024</td>
+            </tr>
+        </tbody>
+    </table> -->
+    &nbsp;<br>
+    <p class="author">
+        <span class="author"><a target="_blank" href="https://qihao067.github.io/">Qihao Liu</a>&nbsp;<sup>1,2</sup></span>
+        <span class="author"><a target="_blank" href="https://xiyinmsu.github.io/">Xi Yin</a>&nbsp;<sup>1</sup></span>
+        <span class="author"><a target="_blank" href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a>&nbsp;<sup>2</sup></span>
+        <span class="author"><a target="_blank" href="https://www.robots.ox.ac.uk/~abrown/">Andrew Brown</a>&nbsp;<sup>1</sup></span>
+        <span class="author"><a target="_blank" href="https://ai.meta.com/people/1287460658859448/mannat-singh/">Mannat Singh&nbsp;</a><sup>1</sup></span>
+    </p>
+    <table width="0%" border="0" align="center" class="affiliations">
+    <tbody align="center">
+        <tr>
+            <td style="text-align: right; width:0%; padding: 0; padding-right: 30px; margin: 0;">
+                &nbsp;<sup>1</sup>&nbsp;GenAI, Meta
+            </td>
+            <td style="text-align: left; width:0%; padding: 0; padding-left: 30px; margin: 0;">
+                &nbsp;<sup>2</sup>&nbsp;Johns Hopkins University
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <table width="80%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+        <tbody>
+            <tr>
+                <td align="center"> <a href="https://" target="_blank">[Paper]</a>&emsp;&emsp;<a href="https://">[Code]</a>&emsp;&emsp;<a href="https://">[Demo (coming soon)]</a>&emsp;&emsp;<a href="https://xxx.github.io/file/bibtex.txt">[BibTeX]</a> </td>
+            </tr>
+        </tbody>
+    </table>
+
+    &nbsp;<br>
+    &nbsp;<br>
+
+    
+    
+    <div class="container">
+
+        <table width="100%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:0%; ">We present CrossFlow, a versatile and streamlined framework that directly maps between two modalities using standard flow matching, eliminating the need for additional conditioning. This approach enables more flexible and effective utilization of powerful flow matching models.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;<br>
+
+
+
+        <!-- <table width="80%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/teaser1.gif" alt="" style="width: 80%; height: auto;">
+                </figure>
+            </tbody>
+        </table> -->
+
+
+        <table width="80%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/teaser.jpg" alt="" style="width: 100%; height: auto;">
+                </figure>
+            </tbody>
+        </table>
+
+
+        
+
+        <table width="100%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:0%; ">Using a vanilla transformer without cross-attention, CrossFlow directly evolves text representations into images for text-to-image generation (see Fig. a). Furthermore, it achieves state-of-the-art performance across various tasks (see Fig. b), including image captioning, zero-shot depth estimation, and image super-resolution, by directly mapping between modalities without relying on task specific architectures.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;<br>
+
+
+        
+
+        &nbsp;<br>
+        <hr class="hr-twill-colorful">
+        &nbsp;<br>
+
+        <p style="text-align: center;"><span class="section"><strong>Abstract</strong></span></p>
+        <p> Diffusion models, and their generalization, flow matching, have had a remarkable impact on the field of media generation. Here, the conventional approach is to learn the complex mapping from a simple source distribution of Gaussian noise to the target media distribution. For cross-modal tasks such as text-to-image generation, this same mapping from noise to image is learnt whilst including a conditioning mechanism in the model. One key and thus far relatively unexplored feature of flow matching is that, unlike Diffusion models, they are not constrained for the source distribution to be noise. Hence, in this paper, we propose a paradigm shift, and ask the question of whether we can instead train flow matching models to learn a direct mapping from the distribution of one modality to the distribution of another, thus obviating the need for both the noise distribution and conditioning mechanism. We present a general and simple framework, CrossFlow, for cross-modal flow matching. We show the importance of applying Variational Encoders to the input data, and introduce a method to enable Classifier-free guidance. Surprisingly, for text-to-image, CrossFlow with a vanilla transformer without cross attention slightly outperforms standard flow matching, and we show that it scales better with training steps and model size, while also allowing for interesting latent arithmetic which results in semantically meaningful edits in the output space. To demonstrate the generalizability of our approach, we also show that CrossFlow is on par with or outperforms the state-of-the-art for various cross-modal / intra-modal mapping tasks, viz. image captioning, depth estimation, and image super-resolution. We hope this paper contributes to accelerating progress in cross-modal media generation.
+        <p class="section">&nbsp;</p>
+
+        &nbsp;<br>
+        <hr class="hr-twill-colorful">
+        &nbsp;<br>
+
+        <p style="text-align: center;"><span class="section"><strong>Method</strong></span></p>
+        <p class="section">&nbsp;</p>
+        <div style="text-align: center">
+            <img src="./img/pipeline.jpg" alt="" width="100%" style="margin: auto" />
+        </div>
+        <p class="section">&nbsp;</p>
+        <p> CrossFlow enables direct evolution between two different modalities. Taking text-to-image generation as an example, our T2I model consists of two main components: a Text Variational Encoder and a standard flow matching model. Starting with a text embedding x generated by any language model, the Text Variational Encoder predicts the mean and variance to sample the text latent z0. This sampled text latent z0 is then directly transformed into the image space to generate the image latent z1.</p>
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+        <p class="section">&nbsp;</p>
+
+
+
+
+        <p style="text-align: center;"><span class="section"><strong>Text-to-image Generation</strong></span></p>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">By directly mapping between text and image space using a vanilla transformer without cross-attention, our 1B model delivers performance comparable to state-of-the-art T2I models such as DALL·E 2 and Stable Diffusion 1.5.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/t2i.jpg" alt="" style="width: 92%; height: auto;">
+                </figure>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+
+
+
+
+        <p class="section">&nbsp;</p>
+        <p style="text-align: center;"><span class="section"><strong>Scaling Characteristics</strong></span></p>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">Our model exhibits superior scaling behavior compared to standard flow matching with cross-attention when scaling training steps or model size. We plot performance relative to model parameters and training iterations. <em>Left</em>: Larger models are able to exploit cross-modality connections better. <em>Right</em>: While CrossFlow needs more steps to converge, it ultimately achieves better final performance.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/scaling.png" alt="" style="width: 55%; height: auto;">
+                </figure>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+
+
+
+
+        <p class="section">&nbsp;</p>
+        <p style="text-align: center;"><span class="section"><strong>Linear Interpolation in Latent Space</strong></span></p>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">Our model provides visually smooth interpolations in the latent space. We show images generated by linear interpolation between the first and the second text latents (i.e., interpolation between z0). CrossFlow enables visually smooth transformations in object orientation, composite colors, shapes, background scenes, and even object categories.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/dog2cat_1.png" alt="Image 1" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 1: 'A white dog wearing a white and black helmet riding a bike in the park'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/dog2cat_2.png" alt="Image 2" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 2: 'An orange cat wearing sunglasses on a ship'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="width: 1%; vertical-align: middle;">
+                        <div style="border-left: 2px solid #000; height: 100px; margin-left: 10px;"></div>
+                    </td> <!-- 分界线 -->
+                    <td style="text-align: center; width: 40%;">
+                        <figure>
+                            <img src="./img/dog2cat.gif" alt="Image 3" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Linear interpolation between Image 1 and Image 2</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/robot2panda_1.png" alt="Image 1" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 1: 'A robot cooking dinner in the kitchen'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/robot2panda_2.png" alt="Image 2" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 2: 'A panda eating hamburger in a classroom'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="width: 1%; vertical-align: middle;">
+                        <div style="border-left: 2px solid #000; height: 100px; margin-left: 10px;"></div>
+                    </td> <!-- 分界线 -->
+                    <td style="text-align: center; width: 40%;">
+                        <figure>
+                            <img src="./img/robot2panda.gif" alt="Image 3" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Linear interpolation between Image 1 and Image 2</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/dog2teddy_1.png" alt="Image 1" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 1: 'A corgi wearing a red hat in the park'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="text-align: center; width: 27%;">
+                        <figure>
+                            <img src="./img/dog2teddy_2.png" alt="Image 2" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Image 2: 'A teddy bear dressed in black wizard hat and robes sitting on the bed'</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td style="width: 1%; vertical-align: middle;">
+                        <div style="border-left: 2px solid #000; height: 100px; margin-left: 10px;"></div>
+                    </td> <!-- 分界线 -->
+                    <td style="text-align: center; width: 40%;">
+                        <figure>
+                            <img src="./img/dog2teddy.gif" alt="Image 3" style="width: 80%; height: auto;">
+                            <figcaption style="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+                                <em>Linear interpolation between Image 1 and Image 2</em>
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+
+
+
+
+        <p class="section">&nbsp;</p>
+        <p style="text-align: center;"><span class="section"><strong>Arithmetic Operations in Latent Space</strong></span></p>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">CrossFlow enables arithmetic operations in the text latent space. Using the Text Variational Encoder (VE), we first map the input text into the latent space z0. Arithmetic operations are then performed in this latent space, and the resulting latent representation is used to generate the corresponding image. The latent code z0 used to generate each image is provided at the bottom.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/arith.jpg" alt="" style="width: 90%; height: auto;">
+                </figure>
+            </tbody>
+        </table>       
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+
+
+
+
+        <p class="section">&nbsp;</p>
+        <p style="text-align: center;"><span class="section"><strong>CrossFlow for Various Tasks</strong></span></p>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">CrossFlow can also be applied to other modalities for various tasks. For example, it directly maps images to text, achieving performance comparable to state-of-the-art models on image captioning on the COCO Karpathy split.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/caption.jpg" alt="" style="width: 80%; height: auto;">
+                </figure>
+                <tr>
+                    <td style="text-align: center; width:50%; font-size: 16px;"><em>Image captioning</em></td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">CrossFlow enables direct mapping from image to depth for zero-shot depth estimation.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/depth_vis.jpg" alt="" style="width: 80%; height: auto;">
+                </figure>
+                <tr>
+                    <td style="text-align: center; width:50%; font-size: 16px;"><em>Zero-shot depth estimation</em></td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:80%; font-size: 16px;">CrossFlow also achieves state-of-the-art performance on image super-resolution.</td>
+                </tr>
+            </tbody>
+        </table>
+        &nbsp;
+        <table width="90%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <figure style="text-align: center;">
+                    <img src="./img/SR_vis.jpg" alt="" style="width: 80%; height: auto;">
+                </figure>
+                <tr>
+                    <td style="text-align: center; width:50%; font-size: 16px;"><em>Image super-resolution (64×64 → 256×256)</em></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="section">&nbsp;</p>
+        <hr class="hr-twill-colorful">
+
+
+
+        <p class="section">&nbsp;</p>
+        <p class="section" id="ak"><b>Acknowledgements</b></p>
+        <table width="100%" border="0" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td style="text-align: left; width:0%; ">We sincerely appreciate Ricky Chen and Saketh Rambhatla for their valuable discussions.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <p class="section">&nbsp;</p>
+        <p class="section" id="bibtex"><b>BibTex</b></p>
+        <table border="0">
+            <tbody>
+                <pre style=" display: block;
+                      background: #eee;
+                      white-space: pre;
+                      -webkit-overflow-scrolling: touch;
+                      max-width: 100%;
+                      min-width: 100px;
+                      border-radius: 0px;
+                      ">
+[TODO]
+			  </pre>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WLX2Z5QLG8');
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function () {
+
+        if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+            $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+        }
+
+        $(window).on("scroll", function() {
+            localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+        });
+
+      });
+ </script>
+
+ <script>
+    function prompt_on(prompt_element) {
+        prompt_element.classList.add("caption-active");
+    }
+
+    function prompt_off(prompt_element) {
+        prompt_element.classList.remove("caption-active");
+    }
+
+    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
+        let active_prompt = document.getElementById(active_prompt_id);
+        prompt_on(active_prompt);
+        for (let i = 0; i < inactive_prompt_ids.length; i++) {
+            let inactive_prompt = document.getElementById(inactive_prompt_ids[i]);
+            prompt_off(inactive_prompt);
+        }
+
+        let result = document.getElementById(result_id);
+        result.src = file_paths[active_prompt_id];
+    }
+ </script>
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
