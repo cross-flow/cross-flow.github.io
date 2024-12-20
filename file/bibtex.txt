@@ -1,0 +1,6 @@
+@article{liu2024flowing,
+  title={Flowing from Words to Pixels: A Framework for Cross-Modality Evolution},
+  author={Liu, Qihao and Yin, Xi and Yuille, Alan and Brown, Andrew and Singh, Mannat},
+  journal={arXiv preprint arXiv:2412.15213},
+  year={2024}
+}
