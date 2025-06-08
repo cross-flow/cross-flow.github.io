@@ -1,6 +1,7 @@
-@article{liu2024flowing,
-  title={Flowing from Words to Pixels: A Framework for Cross-Modality Evolution},
+@inproceedings{liu2025flowing,
+  title={Flowing from Words to Pixels: A Noise-Free Framework for Cross-Modality Evolution},
   author={Liu, Qihao and Yin, Xi and Yuille, Alan and Brown, Andrew and Singh, Mannat},
-  journal={arXiv preprint arXiv:2412.15213},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={2755--2765},
+  year={2025}
 }
